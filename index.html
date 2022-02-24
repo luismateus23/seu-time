@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torcedor Paulista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Torcedor Paulista</h1>
+    <section>
+        <div>
+            
+            <p id="cima">
+                <input class="tim" type="radio" name="rdbtime" id="cor" checked>
+                <label class="tim" for="cor">Corinthians</label>
+                <input class="tim" type="radio" name="rdbtime" id="pal">
+                <label class="tim" for="pal">Palmeiras</label>
+                <input class="tim" type="radio" name="rdbtime" id="san">
+                <label class="tim" for="san">Santos</label>
+                <input class="tim" type="radio" name="rdbtime" id="sao">
+                <label class="tim" for="sao">São Paulo</label>
+            </p>
+            <p id="cen">
+                <input class="sexo" type="radio" name="rdbsexo" id="mas" checked>
+                <label class="sexo" for="mas">Masculino</label>
+                <input class="sexo" type="radio" name="rdbsexo" id="fem">
+                <label class="sexo" for="fem">Feminino</label>
+            </p>
+            
+            <p><input id="botao" type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados, por gentileza!
+        </div>
+        
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

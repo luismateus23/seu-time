@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    margin: auto;
+    text-align: center;
+    background-color: aqua;
+    background-image: url('bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    margin-top: 2rem;
+    color: white;
+    font-size: 3.5vw;
+    text-shadow: 5px 5px 20px black;
+}
+section{
+    background-color: white;
+    max-width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 15px;
+    border-radius: 40px 0px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.651);
+}
+
+div > p{
+    padding: 10px;
+}
+div > p > input{
+    padding: 10px;
+    margin: 0px 10px;
+}
+#botao{
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    
+}
+#botao:hover{
+    background-color: chartreuse;
+    cursor: pointer;
+    
+}
+#botao:active{
+    background-color: darkgreen;
+    transition-duration: 0s;
+}
+div#res{
+    border-top: 1px solid rgba(0, 0, 0, 0.438);
+    margin-top: 15px;
+    padding: 10px;
+}
+img{
+    margin: 20px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px black;
+    width: 50%;
+}
+.tim:hover{
+    cursor: pointer;
+}
+.sexo:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px){
+    #cima{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #cen{
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
